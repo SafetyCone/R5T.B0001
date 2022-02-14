@@ -1,0 +1,9 @@
+R5T.B0001.X001 - Recommended extensions.
+
+
+# Functionalities
+
+* Language and System type name values (void, string, String, int, Int32, Guid, etc.).
+* Microsoft type name values (ServiceCollection).
+* Common default type names (Class1, Interface1, Program, Startup, etc.).
+* Type name operations (IsInterface(), GetExtensionsOfTypeNameTypeName(), etc.).

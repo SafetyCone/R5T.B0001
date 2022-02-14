@@ -1,0 +1,32 @@
+# MISSION: Type name values (just the name, not the namespace), type name operations (IsInterface).
+
+# EVALUATIONS
+
+Examples of what extension method bases were included but might not have been, were not included, might have been, or were not included serve to help define the library.
+
+For examples of extension method bases that were included, just see the list of extension method bases within the project.
+
+All extension method bases in the project or in this listing have been evaluated.
+
+
+# Might not have been included, but are:
+
+* TypeNameAffix - There are lots of type name affixes, and this was previously given its own library to allow lots of type name affix-specific extension libraries.
+
+
+# Might have been included, but were not:
+
+* All type-specific type names - These are provided elsewhere as extra decoration of a type name, but all type names are type names first, any specific type of type name second
+	* IAttributeTypeName
+	* IClassTypeName
+
+
+# Not included:
+
+* All namespace name-specific extensions - This is silly to access namespaces using the dot operator, instead of underscores.
+	* IMicrosoftExtensionsDependencyInjectionNamespaceName
+	* IMicrosoftExtensionsNamespaceName
+	* IMicrosoftNamespaceName
+* INamespacedTypeName - This will have its own repository; this repository is just for the type names.
+* INamespaceGenerator - No generation of actual namespaces (Roslyn style),* just names.
+* INamespaceNameValue - Use the now standard methodology of allowing INamespaceName to be for values, while INamespaceNameOperator is for operations.
