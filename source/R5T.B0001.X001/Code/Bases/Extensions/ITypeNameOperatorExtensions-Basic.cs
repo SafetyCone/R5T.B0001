@@ -70,6 +70,23 @@ namespace System
             return output;
         }
 
+        /// <summary>
+        /// If the type name is an interface, removes the interface name prefix character.
+        /// Otherwise, just returns the class name.
+        /// </summary>
+        public static string GetTypeNameStem_HandleInterface(this ITypeNameOperator _,
+            string typeName)
+        {
+            var isInterface = _.IsInterface(typeName);
+
+            var output = isInterface
+                ? _.GetTypeNameStemForInterfaceName_Unchecked(typeName)
+                : typeName
+                ;
+
+            return output;
+        }
+
         public static bool IsInterface(this ITypeNameOperator _,
             string typeName)
         {

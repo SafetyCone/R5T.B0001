@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.T0039\source\R5T.T0039.T002\R5T.T0039.T002.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Y0001\source\R5T.Y0001\R5T.Y0001.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

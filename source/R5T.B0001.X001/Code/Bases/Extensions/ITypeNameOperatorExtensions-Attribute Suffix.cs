@@ -9,6 +9,17 @@ namespace System
 {
     public static partial class ITypeNameOperatorExtensions
     {
+        public static string AddSuffix(this ITypeNameOperator _,
+            string typeName,
+            string suffix)
+        {
+            var output = Instances.StringOperator.Suffix(
+                typeName,
+                suffix);
+
+            return output;
+        }
+
         public static string GetAttributeSuffixedTypeName(this ITypeNameOperator _,
             string typeName)
         {
