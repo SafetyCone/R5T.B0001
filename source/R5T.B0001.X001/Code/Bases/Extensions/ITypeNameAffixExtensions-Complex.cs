@@ -22,5 +22,10 @@ namespace System
         {
             return TypeNameAffixes.ExtensionsSuffix;
         }
+
+        public static string ProviderSuffix(this ITypeNameAffix _)
+        {
+            return TypeNameAffixes.ProviderSuffix;
+        }
     }
 }

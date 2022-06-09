@@ -1,16 +1,13 @@
 ﻿using System;
 
-using R5T.B0000.X001;
-
-using Characters = R5T.B0000.X001.Characters;
-using Strings = R5T.B0000.X001.Strings;
+using Strings = R5T.Z0000.Strings;
 
 
 namespace R5T.B0001.X001
 {
     public static partial class TypeNameAffixes
     {
-        public static char InterfacePrefix_Character => Characters.I_UpperCase;
-        public static string InterfacePrefix => Strings.I_UpperCase;
+        public static char InterfacePrefix_Character => Instances.Characters.I_Uppercase;
+        public static string InterfacePrefix => Instances.Strings.I_UpperCase;
     }
 }

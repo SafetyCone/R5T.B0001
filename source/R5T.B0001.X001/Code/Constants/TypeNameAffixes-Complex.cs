@@ -10,5 +10,6 @@ namespace R5T.B0001.X001
         public static string AttributeSuffix => "Attribute";
         public static string ExceptionSuffix => "Exception";
         public static string ExtensionsSuffix => "Extensions";
+        public static string ProviderSuffix => "Provider";
     }
 }

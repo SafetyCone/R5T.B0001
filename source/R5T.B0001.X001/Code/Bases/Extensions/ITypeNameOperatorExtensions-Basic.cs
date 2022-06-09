@@ -33,7 +33,7 @@ namespace System
             return output;
         }
 
-        public static string GetInterfaceName(this ITypeName _,
+        public static string GetInterfaceName(this ITypeNameOperator _,
             string typeNameStem)
         {
             var output = Instances.StringOperator.Prefix(
@@ -119,7 +119,7 @@ namespace System
         {
             var output = Instances.StringOperator.Suffix(
                 typeName,
-                Instances.Character.s_LowerCase());
+                Instances.Characters.s_Lowercase);
 
             return output;
         }
