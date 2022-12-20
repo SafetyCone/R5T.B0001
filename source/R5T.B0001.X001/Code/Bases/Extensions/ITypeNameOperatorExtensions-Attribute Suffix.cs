@@ -9,6 +9,7 @@ namespace System
 {
     public static partial class ITypeNameOperatorExtensions
     {
+        [Obsolete("See R5T.F0000.ITypeNameOperator.AddSuffix().")]
         public static string AddSuffix(this ITypeNameOperator _,
             string typeName,
             string suffix)
@@ -20,6 +21,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.GetAttributeSuffixedTypeName().")]
         public static string GetAttributeSuffixedTypeName(this ITypeNameOperator _,
             string typeName)
         {
@@ -30,6 +32,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.GetEnsuredAttributeSuffixedTypeName().")]
         public static string GetEnsuredAttributeSuffixedTypeName(this ITypeNameOperator _,
             string typeName)
         {
@@ -45,6 +48,7 @@ namespace System
             }
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.GetEnsuredNonAttributeSuffixedTypeName().")]
         public static string GetEnsuredNonAttributeSuffixedTypeName(this ITypeNameOperator _,
             string typeName)
         {
@@ -60,6 +64,7 @@ namespace System
             }
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.GetNonAttributeSuffixedTypeName().")]
         public static string GetNonAttributeSuffixedTypeName(this ITypeNameOperator _,
             string attributeSuffixedTypeName)
         {
@@ -85,6 +90,7 @@ namespace System
             }
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.Is_AttributeSuffixedTypeName.")]
         public static bool IsAttributeSuffixedTypeName(this ITypeNameOperator _,
             string typeName)
         {
@@ -95,6 +101,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.HasAttributeTypeNameSuffix().")]
         public static bool HasAttributeTypeNameSuffix(this ITypeNameOperator _,
             string typeName)
         {
